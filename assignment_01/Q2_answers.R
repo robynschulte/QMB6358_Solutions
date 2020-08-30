@@ -82,7 +82,7 @@ print(color_number)
 num_5_limit <- 23
 
 
-# Code goes here:
+# Code goes here: 
 for (num in list_goes_here) {
 
   # Code goes here:
