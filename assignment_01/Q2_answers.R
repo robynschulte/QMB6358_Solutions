@@ -5,12 +5,12 @@
 # Assignment 1, Question 2:
 # Drafting Code for Functions
 #
-# Name:
+# Name: Robyn Schulte
 # Executive Development Center
 # College of Business Administration
 # University of Central Florida
 #
-# Date:
+# Date: 08/30/2020
 #
 ################################################################################
 #
@@ -37,7 +37,7 @@ num_1 <- 3
 num_2 <- 6
 
 
-# Code goes here:
+# Code goes here: 3*6
 product_out <- NA
 
 print(product_out)
@@ -49,7 +49,7 @@ print(product_out)
 
 num_in <- 7
 
-# Code goes here:
+# Code goes here: 
 message_5_or_6 <- NA
 
 print(message_5_or_6)
@@ -61,7 +61,15 @@ print(message_5_or_6)
 
 number_for_color <- 27
 
-# Code goes here:
+# Code goes here: if (number == "0-10") {
+    print("blue")
+} else if (number == "10-20") {
+    print("red")
+} else if (number == "20-30") {
+    print("green")
+} else {
+    print("That is not a correct color option")
+}
 color_number <- NA
 
 print(color_number)
