@@ -37,7 +37,11 @@ num_1 <- 3
 num_2 <- 6
 
 
-# Code goes here: 3*6
+# Code goes here: 
+read num1, num2
+num1*num2
+write multi
+
 product_out <- NA
 
 print(product_out)
@@ -50,6 +54,10 @@ print(product_out)
 num_in <- 7
 
 # Code goes here: 
+read isfive
+if(isfive is not 5 and isfive is not 6)
+    write "your number is not 5 or 6"
+
 message_5_or_6 <- NA
 
 print(message_5_or_6)
@@ -61,15 +69,17 @@ print(message_5_or_6)
 
 number_for_color <- 27
 
-# Code goes here: if (number == "0-10") {
-    print("blue")
-} else if (number == "10-20") {
-    print("red")
-} else if (number == "20-30") {
-    print("green")
-} else {
-    print("That is not a correct color option")
-}
+# Code goes here: 
+Read colornum
+If (colornum >0 and colornum <= 10)
+    Write blue
+else If (colornum >10 and colornum <= 20)
+    Write red
+else If (colornum >20 and colornum <= 30)
+    Write green 
+else
+    Write "not a correct color option"
+
 color_number <- NA
 
 print(color_number)
@@ -83,7 +93,11 @@ num_5_limit <- 23
 
 
 # Code goes here: 
-for (num in list_goes_here) {
+
+Set x to 1 
+While(x < 23)
+    write x 
+    x = x*5
 
   # Code goes here:
 
@@ -104,6 +118,13 @@ count_even_numbers <- 0
 for (num in list_goes_here) {
 
   # Code goes here:
+    
+Read count
+Set x to 0;
+While(x<count)
+    Set even to even + 2
+    x=x+1
+    write even
 
 }
 
@@ -125,6 +146,13 @@ num_list <- c(num_1, num_2, num_3, num_4, num_5)
 
 
 # Code goes here:
+
+Read num_1, num_2, num_3, num_4, num_5
+
+Set avg to (num_1, num_2, num_3, num_4, num_5)/5
+write avg
+
+
 my_min <- NA
 my_avg <- NA
 my_max <- NA
