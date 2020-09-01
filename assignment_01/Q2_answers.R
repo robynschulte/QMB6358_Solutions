@@ -152,6 +152,29 @@ Read num_1, num_2, num_3, num_4, num_5
 Set avg to (num_1, num_2, num_3, num_4, num_5)/5
 write avg
 
+If(num_1<num_2)
+    set max to num_2
+Else
+    set max to num_1
+if(num_3>max)
+    set max to num_3
+if(num_4>max)
+    set max to num_4
+if(num_5>max)
+    set max to num_5
+
+if(num_1>num_2)
+    set min to num_2
+else
+    set min to num_1
+if(num_3<min)
+    set min to num_3
+if(num_4<min)
+    set min to num_4
+if(num_5<min)
+    set min to num_5
+    
+
 
 my_min <- NA
 my_avg <- NA
