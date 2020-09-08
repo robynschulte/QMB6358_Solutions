@@ -56,7 +56,7 @@ x <- c(1,2,3,4)
 
 y <- c(5,6,7,8)
 
-covar_y_x <- cor(x,y,)
+covar_y_x <- cor(y,x)
 
 print(covar_y_x)
 
