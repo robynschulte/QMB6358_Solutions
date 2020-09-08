@@ -50,9 +50,9 @@ source("Q1_functions.R")
 print("Testing function sum_sq_dev:")
 
 # Check values that are output.
-print(sum_sq_dev(x = c(0, 0, 0), mu = 0))
+print(sum_sq_dev(x = c(1, 2, 3), mu = 4))
 # Test output against expected answer.
-print(sum_sq_dev(x = c(0, 0, 0), mu = 0) == 0)
+print(sum_sq_dev(x = c(2, 4, 6), mu = 8) == 0)
 
 # Add more examples.
 
@@ -63,9 +63,9 @@ print(sum_sq_dev(x = c(0, 0, 0), mu = 0) == 0)
 print("Testing function covar_y_x:")
 
 # Check values that are output.
-print(covar_y_x(x = c(0, 0, 0), mu = c(0, 0, 0)))
+print(covar_y_x(x = c(1, 2, 3), mu = c(4, 5, 6)))
 # Test output against expected answer.
-print(covar_y_x(x = c(0, 0, 0), mu = c(0, 0, 0)) == 0)
+print(covar_y_x(x = c(2, 4, 8), mu = c(1, 3, 5)) == 0)
 
 # Add more examples.
 
