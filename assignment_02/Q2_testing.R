@@ -4,11 +4,11 @@
 # QMB 6358: Software Tools for Business Analytics
 # Testing a Library of R Functions
 #
-# Name:
+# Name: Robyn Schulte
 # College of Business Administration
 # University of Central Florida
 #
-# Date:
+# Date: 09/08/2020
 #
 ################################################################################
 #
