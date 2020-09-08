@@ -43,22 +43,32 @@
 # Function definition goes here.
 x <- c(1,2,3,4)
 
-sum_sq_dev <- sum( (x-mean(x) )^2)
-          
+sum_sq_dev <- function(x,mu){
+  sumofsquares <- sum( (x-mean(x) )^2)
+  return(sumofsquares)
+}
+
+
 print(sum_sq_dev)
+
 
 #--------------------------------------------------------------------------------
 # Second function: Covariance between two variables
 #--------------------------------------------------------------------------------
 
 # Function definition goes here.
-x <- c(1,2,3,4)
+x <- c(1,3,5,10)
 
-y <- c(5,6,7,8)
+mu <- c(2,4,6,20)
 
-covar_y_x <- cov(y,x)
+covar_y_x <- function(x, mu){
+  covariance <- cov(x, mu)
+  print(covariance)
+  return(covariance)
+}
 
-print(covar_y_x)
+
+print(covar_y_x(x,mu))
 
 
 
