@@ -52,7 +52,13 @@ print(sum_sq_dev)
 #--------------------------------------------------------------------------------
 
 # Function definition goes here.
+x <- c(1,2,3,4)
 
+y <- c(5,6,7,8)
+
+covar_y_x <- cor(x,y,)
+
+print(covar_y_x)
 
 
 
