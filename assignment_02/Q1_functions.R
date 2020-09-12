@@ -4,11 +4,11 @@
 # QMB 6358: Software Tools for Business Analytics
 # Library of R Functions for Assignment 2
 #
-# Name:
+# Name: Robyn Schulte
 # College of Business Administration
 # University of Central Florida
 #
-# Date:
+# Date: 09/12/2020
 #
 ################################################################################
 #
