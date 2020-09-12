@@ -42,16 +42,15 @@
 
 # Function definition goes here.
 # Save the examples for the testing script:
-# x <- c(1,2,3,4)
 
-sum_sq_dev <- function(x,mu){
+sum_sq_dev <- function(x,y){
   # This doesn't use mu as an argument, input above:
   sumofsquares <- sum( (x-mean(x) )^2)
   return(sumofsquares)
 }
 
 # Let the user decide to print outside of this function library:
-# print(sum_sq_dev)
+
 
 
 #--------------------------------------------------------------------------------
@@ -61,23 +60,19 @@ sum_sq_dev <- function(x,mu){
 # Function definition goes here.
 
 # Save the examples for the testing script:
-# x <- c(1,3,5,10)
-
-# mu <- c(2,4,6,20)
 
 # Use the same names of arguments (y, x) as in the testing script, 
 # otherwise the tests will fail.
-covar_y_x <- function(x, mu){
+covar_y_x <- function(x, y){
   # Perform the calculation of covariance yourself.
   # You can use the cov() function in the testing script. 
-  covariance <- cov(x, mu)
+  covariance <- cov(x, y)
   # Printing not required inside the function:
-  # print(covariance)
   return(covariance)
 }
 
 # Let the user decide to print outside of this function library:
-# print(covar_y_x(x,mu))
+
 
 
 
