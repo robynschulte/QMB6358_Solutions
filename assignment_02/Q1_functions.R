@@ -43,9 +43,9 @@
 # Function definition goes here.
 # Save the examples for the testing script:
 
-sum_sq_dev <- function(x,y){
+sum_sq_dev <- function(x,mu){
   # This doesn't use mu as an argument, input above:
-  sumofsquares <- sum( (x-mean(x) )^2)
+  sumofsquares <- sum( (x-mu) )^2)
   return(sumofsquares)
 }
 
