@@ -4,11 +4,11 @@
 # QMB 6358: Software Tools for Business Analytics
 # Library of R Functions for Assignment 2
 #
-# Name: Robyn Schulte
+# Name:
 # College of Business Administration
 # University of Central Florida
 #
-# Date: 09/08/2020
+# Date:
 #
 ################################################################################
 #
@@ -41,15 +41,12 @@
 #--------------------------------------------------------------------------------
 
 # Function definition goes here.
-# Save the examples for the testing script:
+
 
 sum_sq_dev <- function(x,mu){
-  # This doesn't use mu as an argument, input above:
-  sumofsquares <- sum( (x-mu) )^2)
+  sumofsquares <- sum((x-mu)^2)
   return(sumofsquares)
 }
-
-# Let the user decide to print outside of this function library:
 
 
 
@@ -59,19 +56,10 @@ sum_sq_dev <- function(x,mu){
 
 # Function definition goes here.
 
-# Save the examples for the testing script:
-
-# Use the same names of arguments (y, x) as in the testing script, 
-# otherwise the tests will fail.
 covar_y_x <- function(x, y){
-  # Perform the calculation of covariance yourself.
-  # You can use the cov() function in the testing script. 
-  covariance <- cov(x, y)
-  # Printing not required inside the function:
+  covariance <- (1/(length(y)))*(sum((y-mean(y))*(x-mean(x))))
   return(covariance)
 }
-
-# Let the user decide to print outside of this function library:
 
 
 
@@ -80,4 +68,5 @@ covar_y_x <- function(x, y){
 ################################################################################
 # End
 ################################################################################
+
 
