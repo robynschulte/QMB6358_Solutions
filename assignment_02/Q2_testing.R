@@ -1,10 +1,3 @@
-# Please see the revised testing script Q2_testing.R
-# Aguments of covar_y_x should be (y, x)
-
-# Next step: 
-# Print both the return value and the test against the expected response
-# for both of your examples.
-# And make sure that the test values are correct.
 
 ################################################################################
 #
@@ -15,7 +8,7 @@
 # College of Business Administration
 # University of Central Florida
 #
-# Date: 09/08/2020
+# Date: 09/12/2020
 #
 ################################################################################
 #
@@ -39,8 +32,8 @@
 # install.packages("package_name_goes_here")
 
 # Set working directory, if calling from another location.
-# wd_path <- '~/path/to/your/repo/assignment_02'
-# setwd(wd_path)
+wd_path <- 'C:/Users/robyn/OneDrive/Documents/QMB6358/Course_demos/QMB6358F20/assignment_02'
+setwd(wd_path)
 
 
 # Load your source code for the library of functions.
@@ -57,15 +50,23 @@ source("Q1_functions.R")
 print("Testing function sum_sq_dev:")
 
 # Check values that are output.
-print(sum_sq_dev(x = c(1, 2, 3), mu = 4))
+print(sum_sq_dev(x = c(2, 4, 6), mu = 4))
 # Test output against expected answer.
-# This is not the correct answer:
-print(sum_sq_dev(x = c(2, 4, 6), mu = 8) == 0)
-# It should not evaluate to zero. 
-# Work it out on paper to find the answer you should get. 
+print(sum_sq_dev(x = c(2, 4, 6), mu = 4) == 8)
 
 # Add more examples.
 
+# Additional example 1
+# Check values that are output.
+print(sum_sq_dev(x = c(7, 9, 2), mu = 6))
+# Test output against expected answer.
+print(sum_sq_dev(x = c(7, 9, 2), mu = 6) == 26)
+
+# Additional example 2
+# Check values that are output.
+print(sum_sq_dev(x = c(3, 5, 7), mu = 5))
+# Test output against expected answer.
+print(sum_sq_dev(x = c(3, 5, 7), mu = 5) == 8)
 
 
 
@@ -73,12 +74,24 @@ print(sum_sq_dev(x = c(2, 4, 6), mu = 8) == 0)
 print("Testing function covar_y_x:")
 
 # Check values that are output.
-print(covar_y_x(x = c(1, 2, 3), mu = c(4, 5, 6)))
+print(covar_y_x(y = c(1, 2, 4), x = c(2, 4, 6)))
 # Test output against expected answer.
-print(covar_y_x(x = c(2, 4, 8), mu = c(1, 3, 5)) == 0)
-# Again, zero is not the result you would expect for these inputs.
+print(covar_y_x(y = c(1, 2, 4), x = c(2, 4, 6)) == 2)
 
 # Add more examples.
+
+# Additional example 1
+# Check values that are output.
+print(covar_y_x(y = c(1, 4, 7), x = c(1, 2, 5)))
+# Test output against expected answer.
+print(covar_y_x(y = c(1, 4, 7), x = c(1, 2, 5)) == 4)
+
+
+#Additional example 2
+# Check values that are output.
+print(covar_y_x(y = c(6, 3, 9), x = c(2, 4, 10)))
+# Test output against expected answer.
+print(covar_y_x(y = c(6, 3, 9), x = c(2, 4, 10)) == 6)
 
 
 
@@ -90,5 +103,4 @@ print("Q1 library testing complete.")
 ################################################################################
 # End
 ################################################################################
-
 
