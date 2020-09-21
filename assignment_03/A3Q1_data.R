@@ -4,17 +4,17 @@
 # QMB 6358: Software Tools for Business Analytics
 # Assignment 3: Data Handling
 #
-# Name:
+# Name: Robyn Schulte
 # College of Business
 # University of Central Florida
 #
-# Date:
+# Date: 09/21/2020
 #
 ################################################################################
 #
 # This program reads a collection of small datasets to practice handling data.
 # It is a sample of the script for Assignment 3, Question 1.
-#
+#.files(
 #
 #
 ################################################################################
@@ -32,7 +32,7 @@ rm(list=ls(all=TRUE))
 
 # Set working directory to the path containing the csv files.
 # wd_path <- "/path/to/your/folder
-wd_path <- "C:/Users/le279259/Documents/Teaching/QMB6358_Fall_2020/Assignments/assignment_03/A3_iris_data/QMB6358-iris"
+wd_path <- "C:/Users/robyn/OneDrive/Documents/IRIS/QMB6358-iris"
 setwd(wd_path)
 
 
@@ -54,7 +54,11 @@ num_files <- 100
 # Initialize with an empty object.
 A3Q1_data <- NULL
 for (file_num in 1:num_files) {
-
+  filename <- list.files(path = "C:/Users/robyn/OneDrive/Documents/IRIS/QMB6358-iris", pattern = "iris")
+  write.table(iris, file = 'iris.txt')
+  A3Q1_data_sample_df <- read.table(file = 'iris.txt')
+  A3Q1_data <- rbind(A3Q1_data_sample_df, A3Q1_data)
+  
   # Set the filename.
 
   # A3Q1a) Print filename.
@@ -69,8 +73,8 @@ for (file_num in 1:num_files) {
 
 
 }
-
-
+print(filename)
+print(table(A3Q1_data_sample_df[1:5], useNA = 'ifany'))
 ################################################################################
 # Testing dataset from Question 1
 ################################################################################
