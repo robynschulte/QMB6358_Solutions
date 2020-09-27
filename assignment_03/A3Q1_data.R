@@ -32,7 +32,7 @@ rm(list=ls(all=TRUE))
 
 # Set working directory to the path containing the csv files.
 # wd_path <- "/path/to/your/folder
-wd_path <- "C:/Users/robyn/OneDrive/Documents/IRIS/QMB6358-iris"
+wd_path <- "C:/Users/robyn/OneDrive/Documents/IRIS4/QMB6358-iris"
 setwd(wd_path)
 
 
@@ -53,28 +53,30 @@ num_files <- 100
 
 # Initialize with an empty object.
 A3Q1_data <- NULL
-for (file_num in 1:num_files) {
-  filename <- list.files(path = "C:/Users/robyn/OneDrive/Documents/IRIS/QMB6358-iris", pattern = "iris")
-  write.table(iris, file = 'iris.txt')
-  A3Q1_data_sample_df <- read.table(file = 'iris.txt')
-  A3Q1_data <- rbind(A3Q1_data_sample_df, A3Q1_data)
+
   
-  # Set the filename.
-
+# Set the filename.
+  
+for (file_num in 1:num_files) {
+  
   # A3Q1a) Print filename.
-
-  # Read this file to a temporary data frame.
-
-
-  # A3Q1b) Print table of counts by species (to test file reading).
-  # print(table(A3Q1_data_sample[, 6], useNA = 'ifany'))
-
-  # Append this file to the full dataset.
-
-
+    file_name <- paste('iris_', file_num, '.txt', sep = "")
+    print(file_name)
+    
+    # Read this file to a temporary data frame.
+    A3Q1_data_sample <- read.table(file = file_name)
+    
+    # A3Q1b) Print table of counts by species (to test file reading).
+    # print(table(A3Q1_data_sample[, 6], useNA = 'ifany'))
+    print(table(A3Q1_data_sample[,6]))
+    
+    # Append this file to the full dataset.
+    A3Q1_data <- rbind(A3Q1_data_sample, A3Q1_data)
+    
 }
-print(filename)
-print(table(A3Q1_data_sample_df[1:5], useNA = 'ifany'))
+
+
+
 ################################################################################
 # Testing dataset from Question 1
 ################################################################################
