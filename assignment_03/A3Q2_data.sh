@@ -97,7 +97,7 @@ echo "Completed R script for Question 1."
 echo "Running R script for Question 2..."
 
 # Call your A3Q2_tests.R script here.
-echo  "No tests yet."
+cat A3Q1_data.R
 
 
 echo "Completed R script for Question 2."
@@ -109,7 +109,6 @@ echo "Completed R script for Question 2."
 # Other bash commands after output
 # e.g. zip file and save copy somewhere else
 echo "Completed test of Assignment 3."
-echo "By Robyn"
 
 ################################################################################
 # end
