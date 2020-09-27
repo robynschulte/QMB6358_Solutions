@@ -72,7 +72,7 @@ echo "Running commands for Question 2b)..."
 # Insert a cat command here, reading in all numbered datasets
 # and writing to the full dataset A3Q2b_full.csv.
 # One-line command goes here:
-cat A3Q1_data.R >> A3Q2a_full.csv
+cat A3Q1_data.R >> A3Q2b_full.csv
 
 echo "Completed command for Question 2b)."
 
