@@ -110,7 +110,7 @@ echo "Completed R script for Question 2."
 # e.g. zip file and save copy somewhere else
 echo "Completed test of Assignment 3."
 
-./A3Q2_tests.R
+./A3Q2_tests.R > A3Q2_results.out
 ################################################################################
 # end
 ################################################################################
