@@ -33,7 +33,7 @@
 
 # Set working directory to the path containing the csv files.
 # wd_path <- "/path/to/your/folder
-wd_path <- "C:/Users/robyn/OneDrive/Documents/QMB6358/My assignments1/QMB6358_Solutions/assignment_03"
+wd_path <- "C:/Users/robyn/OneDrive/Documents/QMB6358/My assignments2/QMB6358_Solutions/assignment_03"
 setwd(wd_path)
 
 
