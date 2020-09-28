@@ -97,7 +97,7 @@ echo "Completed R script for Question 1."
 echo "Running R script for Question 2..."
 
 # Call your A3Q2_tests.R script here.
-cat A3Q1_data.R
+cat A3Q2_data.R
 
 
 echo "Completed R script for Question 2."
