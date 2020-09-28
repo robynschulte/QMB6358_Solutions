@@ -22,7 +22,7 @@
 
 # Clear workspace.
 # The remove function removes everything in the workspace when the list is all.
-rm(list=ls(all=TRUE))
+# rm(list=ls(all=TRUE))
 
 # Load library of functions.
 # source('my_R_code.R')
