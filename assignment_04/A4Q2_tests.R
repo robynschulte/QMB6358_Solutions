@@ -55,7 +55,7 @@ getwd()
 
 # Q2 a)
 
-read.csv(file = "A4Q2a_full.csv")
+A4Q2a_full <- read.csv(file = "A4Q2a_full.csv")
 
 
 # Q2 c)
@@ -75,7 +75,7 @@ read.csv(file = "A4Q2a_full.csv")
 
 # Q2 b)
 
-read.csv(file = "A4Q2b_full.csv")
+A4Q2b_full <- read.csv(file = "A4Q2b_full.csv")
 
 
 # Q2 c)
