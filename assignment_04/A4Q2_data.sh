@@ -5,11 +5,11 @@
 # QMB 6358: Software Tools for Business Analytics
 # Shell Script for Creating Datasets in Assignment 4, Question 2
 #
-# Name:
+# Name: Robyn Schulte
 # College of Business
 # University of Central Florida
 #
-# Date:
+# Date: 10/6/2020
 #
 ################################################################################
 #
@@ -42,7 +42,7 @@ echo "Running test of Assignment 4..."
 echo "Running commands for Question 2a)..."
 
 
-# Code goes here.
+paste tractor_sales.csv tractor_specs.csv > A4Q2a_full.csv
 
 
 echo "Completed commands for Question 2a)."
@@ -54,7 +54,7 @@ echo "Completed commands for Question 2a)."
 # Question 2 b) Using the join command
 echo "Running commands for Question 2b)..."
 
-# Code goes here.
+join tractor_Sales.csv tractor_specs.csv > A4Q2b_full.csv
 
 
 echo "Completed command for Question 2b)."
@@ -100,7 +100,7 @@ echo "Completed R script for Question 2."
 # e.g. zip file and save copy somewhere else
 echo "Completed test of Assignment 4."
 
-
+./A4Q2_tests.R > A4Q2_results.out
 ################################################################################
 # end
 ################################################################################

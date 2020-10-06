@@ -4,11 +4,11 @@
 #
 # Joining Datasets
 #
-# Name:
+# Name: Robyn Schulte
 # College of Business
 # University of Central Florida
 #
-# Date:
+# Date: 10/6/2020
 #
 ##################################################
 #
@@ -37,7 +37,7 @@ rm(list=ls(all=TRUE))
 
 
 # Set path for working directory.
-wd_path <- "~/Teaching/QMB6358_Fall_2020/GitRepos/QMB6358F20/assignment_04"
+wd_path <- "C:/Users/robyn/OneDrive/Documents/QMB6358/My assignments2/QMB6358_Solutions/assignment_04"
 # Modify the above line according to the specific path on your computer,
 # as in:
 # wd_path <- 'C:/Users/name/of/your/path'
@@ -55,7 +55,7 @@ getwd()
 
 # Q2 a)
 
-# Code goes here.
+read.csv(file = "A4Q2a_full.csv")
 
 
 # Q2 c)
@@ -75,7 +75,7 @@ getwd()
 
 # Q2 b)
 
-# Code goes here.
+read.csv(file = "A4Q2b_full.csv")
 
 
 # Q2 c)
