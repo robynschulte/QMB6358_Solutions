@@ -41,7 +41,7 @@ echo "Running test of Assignment 4..."
 # Question 2 a) Using the paste command
 echo "Running commands for Question 2a)..."
 
-
+# Please see comments in the announcement on Webcourses.
 paste tractor_sales.csv tractor_specs.csv > A4Q2a_full.csv
 
 
@@ -100,7 +100,13 @@ echo "Completed R script for Question 2."
 # e.g. zip file and save copy somewhere else
 echo "Completed test of Assignment 4."
 
-./A4Q2_tests.R > A4Q2_results.out
+# The ./ prefix is a command for running a shell script (ending in .sh) from the terminal window.
+# ./A4Q2_tests.R > A4Q2_results.out
+# It is not a valid command within an R script. 
+# To run R scripts (at the terminal window or in a shell script)
+# Use the following syntax:
+# Rscript my_R_script.R > file_for_my_results.out
+
 ################################################################################
 # end
 ################################################################################
