@@ -43,6 +43,7 @@ echo "Running test of Assignment 4..."
 # Question 2 a) Using the paste command
 echo "Running commands for Question 2a)..."
 
+<<<<<<< HEAD:assignment_04/A4Q2_data_revised.sh
 # Commands for replacing the extra line endings.
 # See the Announcement on Webcourses for details.
 # Copy them to new file names
@@ -57,6 +58,10 @@ sed -i 's/\r//g' tractor_specs_cleaned.csv
 # Use the _cleaned files instead.
 
 paste -d, tractor_sales_cleaned.csv tractor_specs_cleaned.csv > A4Q2a_full.csv
+=======
+# Please see comments in the announcement on Webcourses.
+paste tractor_sales.csv tractor_specs.csv > A4Q2a_full.csv
+>>>>>>> ae352f7ac2ff61d29134d29833c93249289f41a3:assignment_04/A4Q2_data.sh
 
 
 echo "Completed commands for Question 2a)."
@@ -118,7 +123,13 @@ echo "Completed R script for Question 2."
 # e.g. zip file and save copy somewhere else
 echo "Completed test of Assignment 4."
 
-./A4Q2_tests.R > A4Q2_results.out
+# The ./ prefix is a command for running a shell script (ending in .sh) from the terminal window.
+# ./A4Q2_tests.R > A4Q2_results.out
+# It is not a valid command within an R script. 
+# To run R scripts (at the terminal window or in a shell script)
+# Use the following syntax:
+# Rscript my_R_script.R > file_for_my_results.out
+
 ################################################################################
 # end
 ################################################################################
