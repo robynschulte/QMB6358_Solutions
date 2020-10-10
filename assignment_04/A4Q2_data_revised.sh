@@ -9,13 +9,15 @@
 # College of Business
 # University of Central Florida
 #
-# Date: 10/6/2020
+# Date: 10/10/2020
 #
 ################################################################################
 #
 # This shell script creates a dataset in UNIX, in two ways.
 # It the runs two R scripts to test the contents of the datasets
 # created in UNIX to compare with the results from R.
+#
+# This version is modified to account for added line endings from Windows.
 #
 # Note: The top line tells where your bash program is located
 #     and should match the result you get when you
@@ -41,8 +43,20 @@ echo "Running test of Assignment 4..."
 # Question 2 a) Using the paste command
 echo "Running commands for Question 2a)..."
 
+# Commands for replacing the extra line endings.
+# See the Announcement on Webcourses for details.
+# Copy them to new file names
+cp tractor_sales_new.csv tractor_sales_cleaned.csv
+cp tractor_specs_new.csv tractor_specs_cleaned.csv
+# Replace the file endings with sed (find and replace).
+sed -i 's/\r//g' tractor_sales_cleaned.csv
+sed -i 's/\r//g' tractor_specs_cleaned.csv
 
-paste tractor_sales.csv tractor_specs.csv > A4Q2a_full.csv
+
+# Code goes here.
+# Use the _cleaned files instead.
+
+paste -d, tractor_sales_cleaned.csv tractor_specs_cleaned.csv > A4Q2a_full.csv
 
 
 echo "Completed commands for Question 2a)."
@@ -54,7 +68,11 @@ echo "Completed commands for Question 2a)."
 # Question 2 b) Using the join command
 echo "Running commands for Question 2b)..."
 
-join tractor_Sales.csv tractor_specs.csv > A4Q2b_full.csv
+sort tractor_sales_cleaned.csv > sorted_tractor_sales_cleaned.csv
+
+sort tractor_specs_cleaned.csv > sorted_tractor_specs_cleaned.csv
+
+join -t, sorted_tractor_Sales_cleaned.csv sorted_tractor_specs_cleaned.csv > A4Q2b_full.csv
 
 
 echo "Completed command for Question 2b)."
