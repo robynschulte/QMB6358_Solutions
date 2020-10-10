@@ -66,7 +66,16 @@ A4Q2a_full <- read.csv(file = "A4Q2a_full.csv")
 # print(summary(lm_model_1))
 # from A4Q1_data.R
 
-# Code goes here.
+colnames(A4Q2a_full)
+
+# Estimate a regression model.
+lm_model_1 <- lm(data = A4Q2a_full,
+                 formula = log(saleprice) ~ horsepower + age + enghours +
+                   diesel + fwd + manual + johndeere +
+                   spring + summer + winter)
+
+# Output the results to screen.
+print(summary(lm_model_1))
 
 
 ##################################################
@@ -87,7 +96,16 @@ A4Q2b_full <- read.csv(file = "A4Q2b_full.csv")
 # from A4Q1_data.R
 
 # Code goes here.
+colnames(A4Q2b_full)
 
+# Estimate a regression model.
+lm_model_2 <- lm(data = A4Q2b_full,
+                 formula = log(saleprice) ~ horsepower + age + enghours +
+                   diesel + fwd + manual + johndeere +
+                   spring + summer + winter)
+
+# Output the results to screen.
+print(summary(lm_model_2))
 
 
 

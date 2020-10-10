@@ -43,7 +43,6 @@ echo "Running test of Assignment 4..."
 # Question 2 a) Using the paste command
 echo "Running commands for Question 2a)..."
 
-<<<<<<< HEAD:assignment_04/A4Q2_data_revised.sh
 # Commands for replacing the extra line endings.
 # See the Announcement on Webcourses for details.
 # Copy them to new file names
@@ -58,10 +57,6 @@ sed -i 's/\r//g' tractor_specs_cleaned.csv
 # Use the _cleaned files instead.
 
 paste -d, tractor_sales_cleaned.csv tractor_specs_cleaned.csv > A4Q2a_full.csv
-=======
-# Please see comments in the announcement on Webcourses.
-paste tractor_sales.csv tractor_specs.csv > A4Q2a_full.csv
->>>>>>> ae352f7ac2ff61d29134d29833c93249289f41a3:assignment_04/A4Q2_data.sh
 
 
 echo "Completed commands for Question 2a)."
@@ -108,8 +103,7 @@ echo "Running R script for Question 2..."
 
 
 # Call your A3Q2_tests.R script here.
-echo  "No tests yet."
-# Code goes here.
+Rscript A4Q2_tests.R
 
 
 
@@ -130,6 +124,7 @@ echo "Completed test of Assignment 4."
 # Use the following syntax:
 # Rscript my_R_script.R > file_for_my_results.out
 
+Rscript A4Q2_tests.R > A4Q2_results.out
 ################################################################################
 # end
 ################################################################################
