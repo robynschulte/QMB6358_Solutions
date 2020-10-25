@@ -6,11 +6,11 @@
 #
 # Sample script for Assignment 6, Question 1
 #
-# Name: 
+# Name: Robyn Schulte
 # College of Business Administration
 # University of Central Florida
 #
-# Date:
+# Date: 10/25/2020
 #
 #
 ##################################################
