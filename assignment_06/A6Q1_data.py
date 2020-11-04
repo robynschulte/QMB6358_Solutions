@@ -37,7 +37,7 @@ import statsmodels.formula.api as sm # Another way to estimate linear regression
 # Find out the current directory.
 os.getcwd()
 # Change to a new directory.
-os.chdir('C:\\Users\\le279259\\Documents\\Teaching\\QMB6358_Fall_2020\\Assignments\\assignment_06')
+os.chdir('C:\\Users\\robyn\\OneDrive\\Documents\\QMB6358\\My assignments2\\QMB6358_Solutions\\assignment_06')
 # Check that the change was successful.
 os.getcwd()
 
@@ -52,9 +52,24 @@ housing_full = pd.read_csv('housing_data/housing_data_1.csv')
 
 
 # Use a for loop to bind additional datasets to housing_full.
-# Code goes here.
+for i in range (1,6):
+    i = str(i)
+    housing_file = "housing_data\\" + "housing_data_" + i + ".csv"
+    text = open(housing_file, 'r')
+    print(text.name)
 
 
+housing_single = []
+
+for i in range (1,6):
+    i = str(i)
+    housing_file = "housing_data\\" + "housing_data_" + i + ".csv"
+    housing_df = pd.read_csv(housing_file, index_col=None, header=0)
+    housing_single.append(housing_df)
+
+print(housing_single)
+
+housing_full = pd.concat(housing_single)
 
 # Calculate summary statistics for your data.
 housing_full.describe()

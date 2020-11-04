@@ -6,11 +6,11 @@
 #
 # Sample script for Assignment 6, Question 2
 #
-# Name: 
+# Name: Robyn Schulte
 # College of Business Administration
 # University of Central Florida
 #
-# Date:
+# Date: 10/26/2020
 #
 #
 ##################################################
@@ -26,7 +26,8 @@ import os # To set working directory
 # import numpy as np # Not needed here but often useful
 import pandas as pd # To read and inspect data
 import statsmodels.formula.api as sm # Another way to estimate linear regression
-
+import string
+import glob
 
 
 ##################################################
@@ -37,7 +38,7 @@ import statsmodels.formula.api as sm # Another way to estimate linear regression
 # Find out the current directory.
 os.getcwd()
 # Change to a new directory.
-os.chdir('C:\\Users\\le279259\\Documents\\Teaching\\QMB6358_Fall_2020\\Assignments\\assignment_06')
+os.chdir('C:\\Users\\robyn\\OneDrive\\Documents\\QMB6358\\My assignments2\\QMB6358_Solutions\\assignment_06\\html_files')
 # Check that the change was successful.
 os.getcwd()
 
@@ -66,15 +67,19 @@ with open('html_files/week_1.html', 'r') as input_file:
 # See what it looks like.
 print(line)
 
-
-
+    
 # Now make your function with this example.
 def get_obs(line):
     
     # Code goes here.
-    num_out = 7
+    start = string.find(line,">")+1
+    end = string.rfind(line,"<")
+       
+    num_out = line[start:end]
     
     return num_out
+
+
 
 
 
@@ -121,9 +126,10 @@ print(line_6)
 def get_obs_row(line_2, line_3, line_4, line_5):
     
     # Code goes here.
-    row_out = 7
+    row_out = [get_obs(line_2),get_obs(line_3),get_obs(line_4),get_obs(line_5)]
     
     return row_out
+ 
 
 
 
@@ -161,7 +167,11 @@ with open('html_files/week_1.html', 'r') as input_file:
         next_row = get_obs_row(line_2, line_3, line_4, line_5)
         
         # More code goes here.
-
+        housing_data = pd.DataFrame([next_row],columns=['house_price','income','in_cali','earthquake'])
+                
+        housing_data = housing_data.append([next_row])
+        
+        print(housing_data)
 
 
 ##################################################
@@ -171,6 +181,11 @@ with open('html_files/week_1.html', 'r') as input_file:
 
 
 # Code goes here.
+path = r'C:\\Users\\robyn\\OneDrive\\Documents\\QMB6358\\My assignments2\\QMB6358_Solutions\\assignment_06\\html_files'
+
+files = glob.glob(os.path.join(path, "*.html"))
+
+house_data = pd.concat(pd.read_html(file) for file in files)
 
 
 
