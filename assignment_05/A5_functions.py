@@ -52,7 +52,7 @@ def letter_grade(grade):
     #--------------------------------------------------
 
 def path_to_data_file(path,prefix,file_num,extension):
-    print(path + prefix + "_" + file_num + "." + extension)
+    return(path + prefix + "_" + file_num + "." + extension)
          
 
 
@@ -77,7 +77,8 @@ def number_of_vowels(str):
     for alphabet in str:
         if alphabet in vowel:
             count = count + 1
-    print("Number of vowels:", count)
+    # print("Number of vowels:", count)
+    return count
 
 
 
@@ -92,44 +93,44 @@ def main():
     # Example 1
     #--------------------------------------------------
 
-print(letter_grade(90))
-print(letter_grade(65))
-print(letter_grade(72))
-print(letter_grade(59))
-
+    print(letter_grade(90))
+    print(letter_grade(65))
+    print(letter_grade(72))
+    print(letter_grade(59))
+    
     #--------------------------------------------------
     # Example 2
     #--------------------------------------------------
-
-path_to_data_file('~/IRIS4/QMB6358-iris/','iris','1','txt')
-path_to_data_file('~/QMB6358/My assignments2/QMB6358_Solutions/assignment_01/','Q1','answer', 'txt')
-path_to_data_file('~/QMB6358/My assignments2/QMB6358_Solutions/assignment_02/','Q1','functions','r')
-path_to_data_file('~/QMB6358/My assignments2/QMB6358_Solutions/assignment_03/','A3Q1','data','r')     
-
+    
+    print(path_to_data_file('~/IRIS4/QMB6358-iris/','iris','1','txt'))
+    print(path_to_data_file('~/QMB6358/My assignments2/QMB6358_Solutions/assignment_01/','Q1','answer', 'txt'))
+    print(path_to_data_file('~/QMB6358/My assignments2/QMB6358_Solutions/assignment_02/','Q1','functions','r'))
+    print(path_to_data_file('~/QMB6358/My assignments2/QMB6358_Solutions/assignment_03/','A3Q1','data','r'))     
+    
     #--------------------------------------------------
     # Example 3
     #--------------------------------------------------
     
-print (cyl_vol(10, 5))
-print (cyl_vol(4, 3))
-print (cyl_vol(9, 4))
-print (cyl_vol(12, 2))
+    print (cyl_vol(10, 5))
+    print (cyl_vol(4, 3))
+    print (cyl_vol(9, 4))
+    print (cyl_vol(12, 2))
     
     #--------------------------------------------------
     # Example 4
     #--------------------------------------------------
     
-str = "Coding is fun"
-number_of_vowels(str)
-
-str = "Business Analytics"
-number_of_vowels(str)
-
-str = "Tuesdays and Thursdays"
-number_of_vowels(str)
-
-str = "Go Knights"
-number_of_vowels(str)    
+    str = "Coding is fun"
+    number_of_vowels(str)
+    
+    str = "Business Analytics"
+    number_of_vowels(str)
+    
+    str = "Tuesdays and Thursdays"
+    number_of_vowels(str)
+    
+    str = "Go Knights"
+    number_of_vowels(str)    
 
 
 

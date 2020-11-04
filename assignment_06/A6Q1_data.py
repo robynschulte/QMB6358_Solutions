@@ -37,7 +37,11 @@ import statsmodels.formula.api as sm # Another way to estimate linear regression
 # Find out the current directory.
 os.getcwd()
 # Change to a new directory.
+<<<<<<< HEAD
 os.chdir('C:\\Users\\robyn\\OneDrive\\Documents\\QMB6358\\My assignments2\\QMB6358_Solutions\\assignment_06')
+=======
+os.chdir('C:\Users\robyn\OneDrive\Documents\QMB6358\My assignments2\QMB6358_Solutions\assignment_06')
+>>>>>>> 35be952f939ad04c3fa6afb148568e999d0e0840
 # Check that the change was successful.
 os.getcwd()
 
