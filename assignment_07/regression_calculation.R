@@ -5,11 +5,11 @@
 # OLS Regression Demo
 # Regression with Data Entered Directly into the Script
 #
-# Name:
+# Name: Robyn Schulte
 # College of Business Administration
 # University of Central Florida
 #
-# Date:
+# Date: 11/18/2020
 #
 ##################################################
 #
