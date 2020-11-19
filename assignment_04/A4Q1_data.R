@@ -130,7 +130,9 @@ print(summary(lm_model_1))
 
 
 # This should be a much better model.
-
+columns_to_keep <- c('Age.Difference', 'DrPepperSchwartz', 'DrLoganLevkoff', 'DrJosephCilona', 'ChaplainGregEpstein', 'PastorCalvinRoberson', 'RachelDeAlto', 'DrJessicaGriffin', 'DrVivianaColes')
+mafs_df <- data_set[,columns_to_keep]
+summary(mafs_df)
 
 
 ##################################################
