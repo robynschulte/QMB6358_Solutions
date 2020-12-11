@@ -1,0 +1,21 @@
+   X0Sale_ID          age            price       
+ Min.   :101.0   Min.   :13.00   Min.   :  9000  
+ 1st Qu.:149.5   1st Qu.:19.00   1st Qu.: 19250  
+ Median :198.0   Median :22.00   Median : 33500  
+ Mean   :198.0   Mean   :24.61   Mean   : 50237  
+ 3rd Qu.:246.5   3rd Qu.:30.00   3rd Qu.: 73500  
+ Max.   :295.0   Max.   :44.00   Max.   :254000  
+   X0Sale_ID          age            price             pass      
+ Min.   :101.0   Min.   :13.00   Min.   :  9000   Min.   :2.000  
+ 1st Qu.:149.5   1st Qu.:19.00   1st Qu.: 19250   1st Qu.:4.000  
+ Median :198.0   Median :22.00   Median : 33500   Median :4.000  
+ Mean   :198.0   Mean   :24.61   Mean   : 50237   Mean   :4.287  
+ 3rd Qu.:246.5   3rd Qu.:30.00   3rd Qu.: 73500   3rd Qu.:6.000  
+ Max.   :295.0   Max.   :44.00   Max.   :254000   Max.   :6.000  
+      wtop           fixgear           tdrag        
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.00000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.00000  
+ Median :0.0000   Median :0.0000   Median :0.00000  
+ Mean   :0.4615   Mean   :0.4513   Mean   :0.05641  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:0.00000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.00000  
